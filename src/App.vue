@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-md">
     <router-view/>
   </div>
 </template>
@@ -8,8 +8,12 @@
   body {
     background-color: #fafafa;
   }
-  .container {
+  .container-md {
     margin-top: 1rem;
-    max-width: 50vw;
+  }
+  @media (min-width: 992px) {
+    .container-md {
+      max-width: 50vw;
+    }
   }
 </style>
