@@ -3,7 +3,7 @@ import axios from 'axios';
 const apiKey = 'd2e9bfa0'; // TODO: this is super unsafe and for testing purposes, this should be stored somewhere secure
 
 const instance = axios.create({
-  baseURL: `http://www.omdbapi.com/?apikey=${apiKey}`,
+  baseURL: `https://www.omdbapi.com/?apikey=${apiKey}`,
 });
 
 instance.interceptors.response.use(
